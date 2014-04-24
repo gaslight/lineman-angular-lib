@@ -13,8 +13,14 @@
  */
 module.exports = function(lineman) {
   //Override application configuration here. Common examples follow in the comments.
+  var app = lineman.config.application;
   return {
 
+    concat: {
+      uncompressedDist: {
+        src: app.concat.uncompressedDist.src.concat("<%= files.ngtemplates.dest %>")
+      }
+    }
     // API Proxying
     //
     // During development, you'll likely want to make XHR (AJAX) requests to an API on the same
@@ -29,7 +35,6 @@ module.exports = function(lineman) {
     //     port: 3000
     //   }
     // }
-
     // Sass
     //
     // Lineman supports Sass via grunt-contrib-sass, which requires you first

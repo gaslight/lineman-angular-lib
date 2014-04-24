@@ -1,7 +1,7 @@
 {
-  "name": "schema-form",
+  "name": "angular-lib-example",
   "version": "0.0.1",
-  "description": "Angular directives to build forms from jsonschema",
+  "description": "Example angular lib project",
   "homepage": "https://your/lib/name/here",
   "author": {
     "name": "Chris Nelson",

@@ -13,7 +13,9 @@
     "package.json"
   ],
   "dependencies": {
+    "angular": "*"
   },
   "devDependencies": {
+    "angular-mocks": "*"
   }
 }
