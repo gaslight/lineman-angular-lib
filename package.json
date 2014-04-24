@@ -16,7 +16,8 @@
     "lineman": ">= 0.24.7",
     "lineman-lib": ">= 0.0.1",
     "lineman-angular": ">= 0.2.0",
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "lineman-bower": "0.0.3"
   },
   "scripts": {
     "start": "lineman run",

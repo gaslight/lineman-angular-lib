@@ -1,7 +1,7 @@
 {
-  "name": "your-lib-name-here",
+  "name": "schema-form",
   "version": "0.0.1",
-  "main": "dist/your-lib-name-here.js",
+  "main": "dist/schema-form.js",
   "ignore": [
     "app",
     "config",
@@ -12,6 +12,10 @@
     "main.js",
     "package.json"
   ],
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "angular": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "*"
+  }
 }

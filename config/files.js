@@ -12,12 +12,13 @@ module.exports = function(lineman) {
     // As an example, to override the file patterns for
     // the order in which to load third party JS libs:
     //
-    // js: {
-    //   vendor: [
-    //     "vendor/js/underscore.js",
-    //     "vendor/js/**/*.js"
-    //   ]
-    // }
+    js: {
+      vendor: [
+        "vendor/js/underscore.js",
+        "vendor/bower/angular/angular.js",
+        "vendor/bower/angular-mocks/angular-mocks.js"
+      ]
+    }
 
   };
 };
