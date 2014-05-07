@@ -14,13 +14,24 @@
 module.exports = function(lineman) {
   //Override application configuration here. Common examples follow in the comments.
   var app = lineman.config.application;
+  uncompressedDistSrc = ["<%= files.ngtemplates.dest %>"];
+  if (app.concat && app.concat.uncompressedDist) {
+    uncompressedDistSrc = app.concat.uncompressedDist.src.concat("<%= files.ngtemplates.dest %>");
+  }
   return {
 
     concat: {
       uncompressedDist: {
-        src: app.concat.uncompressedDist.src.concat("<%= files.ngtemplates.dest %>")
+        src: uncompressedDistSrc
+      }
+    },
+    "plugins": {
+      "lib": {
+        "includeVendorInDistribution": false,
+        "generateBowerJson": true
       }
     }
+    
     // API Proxying
     //
     // During development, you'll likely want to make XHR (AJAX) requests to an API on the same
